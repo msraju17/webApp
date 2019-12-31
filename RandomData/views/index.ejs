@@ -1,0 +1,210 @@
+<h1>
+	Welcome!! to random data generator
+</h1>
+
+<h3>
+	Names
+</h3>
+<table border=1>
+	<tr>
+		<th>firstName</th>
+		<th>lastName</th>
+		<th>jobTitle</th>
+		<th>title</th>
+		<th>jobDescriptor</th>
+		<th>jobArea</th>
+		<th>jobType</th>
+	</tr>
+	<% data.forEach(function(detail){ %>
+	<tr>
+		<td><%= detail.firstName %></td>
+		<td><%= detail.lastName %></td>
+		<td><%= detail.jobTitle %></td>
+		<td><%= detail.title %></td>
+		<td><%= detail.jobDescriptor %></td>
+		<td><%= detail.jobArea %></td>
+		<td><%= detail.jobType %></td>
+	</tr>
+	<% });%>
+</table>
+
+<h3>
+	Internet
+</h3>
+<table border=1>
+	<tr>
+		<th>email</th>
+		<th>exampleEmail</th>
+		<th>userName</th>
+	</tr>
+	<% data.forEach(function(detail){ %>
+	<tr>
+		<td><%= detail.email %></td>
+		<td><%= detail.exampleEmail %></td>
+		<td><%= detail.userName %></td>
+	</tr>
+	<% });%>
+</table>
+
+<h3>
+	Phone
+</h3>
+<table border=1>
+	<tr>
+		<th>phoneNumber</th>
+		<th>phoneNumberFormat</th>
+		<th>phoneFormats</th>
+	</tr>
+	<% data.forEach(function(detail){ %>
+	<tr>
+		<td><%= detail.phoneNumber %></td>
+		<td><%= detail.phoneNumberFormat %></td>
+		<td><%= detail.phoneFormats %></td>
+	</tr>
+	<% });%>
+</table>
+
+<h3>
+	Address
+</h3>
+<table border=1>
+	<tr>
+		<th>StreetName</th>
+		<th>StreetAddress</th>
+		<th>city</th>
+		<th>state</th>
+		<th>stateAbbr</th>
+		<th>county</th>
+		<th>country</th>
+		<th>countryCode</th>
+		<th>zipCode</th>
+		<th>latitude</th>
+		<th>longitude</th>
+	</tr>
+	<% data.forEach(function(detail){ %>
+	<tr>
+		<td><%= detail.streetName %></td>
+		<td><%= detail.streetAddress %></td>
+		<td><%= detail.city %></td>
+		<td><%= detail.state %></td>
+		<td><%= detail.stateAbbr %></td>
+		<td><%= detail.county %></td>
+		<td><%= detail.country %></td>
+		<td><%= detail.countryCode %></td>
+		<td><%= detail.zipCode %></td>
+		<td><%= detail.latitude %></td>
+		<td><%= detail.longitude %></td>
+	</tr>
+	<% });%>
+</table>
+
+<h3>
+	Company
+</h3>
+<table border=1>
+	<tr>
+		<th>companyName</th>
+		<th>catchPhrase</th>
+		<th>catchPhraseAdjective</th>
+		<th>catchPhraseDescriptor</th>
+		<th>catchPhraseNoun</th>
+		<th>bsAdjective</th>
+		<th>bsBuzz</th>
+		<th>bsNoun</th>
+	</tr>
+	<% data.forEach(function(detail){ %>
+	<tr>
+		<td><%= detail.companyName %></td>
+		<td><%= detail.catchPhrase %></td>
+		<td><%= detail.catchPhraseAdjective %></td>
+		<td><%= detail.catchPhraseDescriptor %></td>
+		<td><%= detail.catchPhraseNoun %></td>
+		<td><%= detail.bsAdjective %></td>
+		<td><%= detail.bsBuzz %></td>
+		<td><%= detail.bsNoun %></td>
+	</tr>
+	<% });%>
+</table>
+
+<h3>
+	Finance
+</h3>
+<table border=1>
+	<tr>
+		<th>account</th>
+		<th>accountName</th>
+		<th>mask</th>
+		<th>amount</th>
+		<th>transactionType</th>
+		<th>currencyCode</th>
+		<th>currencyName</th>
+		<th>currencySymbol</th>
+	</tr>
+	<% data.forEach(function(detail){ %>
+	<tr>
+		<td><%= detail.account %></td>
+		<td><%= detail.accountName %></td>
+		<td><%= detail.mask %></td>
+		<td><%= detail.amount %></td>
+		<td><%= detail.transactionType %></td>
+		<td><%= detail.currencyCode %></td>
+		<td><%= detail.currencyName %></td>
+		<td><%= detail.currencySymbol %></td>
+	</tr>
+	<% });%>
+</table>
+
+<h3>
+	Commerce
+</h3>
+<table border=1>
+	<tr>
+		<th>department</th>
+		<th>productName</th>
+		<th>price</th>
+		<th>productAdjective</th>
+		<th>productMaterial</th>
+		<th>product</th>
+	</tr>
+	<% data.forEach(function(detail){ %>
+	<tr>
+		<td><%= detail.department %></td>
+		<td><%= detail.productName %></td>
+		<td><%= detail.price %></td>
+		<td><%= detail.productAdjective %></td>
+		<td><%= detail.productMaterial %></td>
+		<td><%= detail.product %></td>
+	</tr>
+	<% });%>
+</table>
+
+<h3>
+	Lorem
+</h3>
+<table border=1>
+	<tr>
+		<th>word</th>
+		<th>words</th>
+		<th>sentence</th>
+		<th>slug</th>
+		<th>sentences</th>
+		<th>paragraph</th>
+		<th>paragraphs</th>
+		<th>text</th>
+		<th>lines</th>
+	</tr>
+	<% data.forEach(function(detail){ %>
+	<tr>
+		<td><%= detail.word %></td>
+		<td><%= detail.words %></td>
+		<td><%= detail.sentence %></td>
+		<td><%= detail.slug %></td>
+		<td><%= detail.sentences %></td>
+		<td><%= detail.paragraph %></td>
+		<td><%= detail.paragraphs %></td>
+		<td><%= detail.text %></td>
+		<td><%= detail.lines %></td>
+	</tr>
+	<% });%>
+</table>
+
